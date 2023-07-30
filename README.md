@@ -3,6 +3,10 @@
 
 > Open this page at [https://carlts.github.io/microbit-grove/](https://carlts.github.io/microbit-grove/)
 
+## Tutorials
+* [tutorial](/microbit-grove/tutorials/servo) [start](https://makecode.microbit.org/#tutorial:https://carlts.github.io/microbit-grove/tutorials/servo)
+
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
@@ -21,6 +25,8 @@ To edit this repository in MakeCode.
 * paste **https://github.com/carlts/microbit-grove** and click import
 
 #### Metadata (used for search, rendering)
+
+
 
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
