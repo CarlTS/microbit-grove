@@ -7,7 +7,10 @@ basic.showIcon(IconNames.Yes)
 ## {Introduction @unplugged}
 Let's create movement using @boardname@ , Grove and Servo Motors!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
-Look out for hints indicated by a light bulb - :lightbulb:    
+Look out for hints indicated by a light bulb 
+~
+    - :lightbulb:    
+~
 Click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right after each step to continue.
 
 ## Testing the micro:bit @unplugged
@@ -64,7 +67,7 @@ let y = 1
 ## Testing Hint
 Words that are not hidden
 ~hint This content is hidden until the user clicks here.
-  - :blank: Bullet 1
+  - :lightbulb: Bullet 1
   - :mouse pointer: Bullet 2
 hint~
 
