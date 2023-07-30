@@ -11,7 +11,7 @@ Let's create movement using @boardname@ , Grove and Servo Motors!
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 ![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
-> Click the ``|OK|`` or ``|Next|`` button when ready to continue.
+> Click the ``|game:OK ➔|`` or ``|➔ Next|`` button on the right after each step to continue.
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -59,12 +59,18 @@ let x = 1
 let y = 1
 ```
 
-## Different Spy
-```diffspy
-let x = 1
-----------
-let x = 1
-let y = 1
+## Testing Hint
+Words that are not hidden
+~hint This content is hidden until the user clicks here.
+  - :blank: Bullet 1
+  - :mouse pointer: Bullet 2
+hint~
+
+```blocks
+// @highlight
+input.onButtonPressed(Button.A, function () {
+	
+})
 ```
 
 
