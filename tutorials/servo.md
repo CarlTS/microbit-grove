@@ -13,8 +13,9 @@ basic.showLeds(`
 ## {Introduction @unplugged}
 Let's create movement using @boardname@ , Grove and Servo Motors!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
-**Helpful Hints**
-  - :lightbulb: Look out for hints indicated by a light bulb   
+
+  - :lightbulb: **Helpful Hints**   
+  Look out for hints indicated by a light bulb   
 You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right after each step to continue.
 
 ## Testing the micro:bit @unplugged
@@ -57,7 +58,7 @@ input.onButtonPressed(Button.A, function () {
 * Enabled: false
 ```
 
-## Coding Time 
+## {Coding Time}
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
 💡 This will be the trigger for our servo motor. We will worry about this later!
 ```blocks
@@ -67,7 +68,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## differentblocks
+## {different blocks}
 ► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``   
 💡 This will be tell the servo motor where to move to
 ```blocks
@@ -89,14 +90,9 @@ You should have seen you micro:bit move!
 ## Test different numbers
 ► Try changing the value of 180, and test again   
 💡 Don't forget to ``|Download|`` each time to test  
-   
-      
-         
-Only numbers between 0 and 180 will work.
-You may need a battery pack if it is not moving at all
+💡 Only numbers between 0 and 180 will work.
 
-
-## More Control
+## {More Control}
 ► Let us get more control with another ``||input:on button [A] pressed||`` on the workspace   
 ► You will need to change the ``||input:[A]||`` pressed to ``||input:[B]||`` pressed
 ```blocks
@@ -109,7 +105,7 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-## More Control - Second Location
+## {More Control - Second Location}
 ► Place another ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [B] pressed||``   
 ► Set ``||input:[180]||`` to ``||input:[90]||``
 ```blocks
@@ -125,7 +121,7 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-## Download to micro:bit
+## {Download to micro:bit}
 ► Time to test the movement   
 ► ``|Download|`` your code to the micro:bit   
 ► Press the [A] button on the microbit and it should go to position 180   
@@ -139,19 +135,16 @@ Now try the challenges on the following pages
 ► User Feedback   
 ► Shake Trigger
 
-## Complete Control
-Try this challenge:   
+## Complete Control Challenge
 ► Pressing A goes to 20 degrees   
 ► Pressing B goes to 160 degrees   
 ► Pressing A and B goes to 90 degrees
 
-## User Feedback
-Try this challenge:   
+## User Feedback Challenge
 ► Pressing A moves the servo and shows a left arrow   
 ► Pressing B Shows a right arrow and moves the servo   
 
-## Shake trigger
-Try this challenge:   
+## Shake Trigger Challenge
 ► When shaking the microbit (Not the servo motor) it moves the Servo   
 ► Pressing A - resets the servo position   
 
