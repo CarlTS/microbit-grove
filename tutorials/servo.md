@@ -26,14 +26,18 @@ basic.showIcon(IconNames.Yes)
 Lets collect all the parts needed for this tutorial
 ![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
 
+## 
+
 ## Connecting Everything @unplugged
 Connect the parts together.
 ![Servo to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
 
+## 
+Apples
+
 ## Time to Code @unplugged
-You will need to use the ``||input:on button [A] pressed||`` in the next step
+In the next step, you will need to use ``||input:on button [A] pressed||``
 ```blocks
-// @highlight
 input.onButtonPressed(Button.A, function () {
 	
 })
