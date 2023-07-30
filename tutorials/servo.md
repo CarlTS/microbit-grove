@@ -38,8 +38,8 @@ for (let index = 0; index <= 2; index++) {
 }
 ```
 
-## Activity 9 - Servo Motor
-### Step 1 - Collect Parts @unplugged
+
+## Step 1 - Collect Parts @unplugged
 How far away?
 =============
 In this activity you will learn how to make a servo motor move
@@ -47,14 +47,14 @@ In this activity you will learn how to make a servo motor move
 Collect the parts you will need;
 ![Parts Needed: 1 Servo Motor, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
 
-### Step 2 - Connect Wires
+## Step 2 - Connect Wires
 Physical Connection
 -------------------
 1. Plug the microbit into the Shield 
 2. Plug the 180 Degree Servo Motor into the P0 pin
 ![Connection Image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
 
-### Step 3 - Program
+## Step 3 - Program
 Coding: Setup the first position
 ------------------
 Place a ``||pins:servo write pin||`` block inside a ``||input:On Button A Pressed||``
@@ -66,7 +66,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 
-### Step 4 - Program
+## Step 4 - Program
 Coding: Setup the Second position
 ------------------
 Place another ``||pins:servo write pin||`` block inside another ``||input:On Button A Pressed||``
@@ -82,14 +82,14 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 
-### Step 5 - Test in the simulator
+## Step 5 - Test in the simulator
 Testing: Does the simulator microbit and servo move
 ------------------
 In the simulator on the left, press the Button A and Button B on the microbit
 Does the servo on the screen move?
 
 
-### Step 7 - Download Program
+## Step 7 - Download Program
 Download & Test
 --------------------
 Click ``|Download|`` to transfer your code
