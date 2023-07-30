@@ -18,17 +18,17 @@ We'll begin by testing our microbit
 basic.showIcon(IconNames.Yes)
 ```
 
-## Collecting Parts @showdialog
+## Collecting Parts @fullscreen
 
 Lets Connect all the parts, you will need
 ![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
 
-## Connecting Everything @showhint
+## Connecting Everything @unplugged
 Connect the parts together.
 ![Servo to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
 
 
-## Coding Time
+## Coding Time @unplugged @fullscreen
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
 💡 This will be the trigger for our servo motor. We will worry about this later!
 
