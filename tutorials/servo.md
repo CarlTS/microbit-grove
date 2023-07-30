@@ -49,6 +49,7 @@ input.onButtonPressed(Button.A, function () {
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
 💡 This will be the trigger for our servo motor. We will worry about this later!
 ```blocks
+// @highlight
 input.onButtonPressed(Button.A, function () {
 	
 })
@@ -57,6 +58,7 @@ input.onButtonPressed(Button.A, function () {
 ## differentblocks
 ► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``
 ```blocks
+// @highlight
 input.onButtonPressed(Button.A, function () {
     pins.servoWritePin(AnalogPin.P0, 180)
 })
