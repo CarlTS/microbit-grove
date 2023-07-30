@@ -7,25 +7,23 @@ basic.showIcon(IconNames.Yes)
 Let's create movement using @boardname@ , Grove and Servo Motors!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
 
-## {Testing the micro:bit}
-We'll begin by testing our microbit
+## Testing the micro:bit @unplugged
+We want to make sure everything is working correctly.
+![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+<font size=2>Continue onto the next when ready to start</font>
 
+## {Testing the micro:bit}
+We'll begin by testing our microbit   
 ► Plug in your microbit   
 ► In the bottom left of the screen select  ``|Download|``  
 ► You should now see a ✓ on your microbit  -  💡 [Need help connecting?](https://www.youtube.com/watch?v=qSjMDG84bMY)
-►   
-►   
-nospaceafter
-►
-►
 
 ```blocks
 basic.showIcon(IconNames.Yes)
 ```
 
 ## Collecting Parts @unplugged @fullscreen
-
-Lets Connect all the parts, you will need
+Lets collect all the parts needed for this tutorial
 ![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
 
 ## Connecting Everything @unplugged
