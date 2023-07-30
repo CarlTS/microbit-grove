@@ -53,9 +53,7 @@ Connect the parts together.
 ## Time to Code @unplugged
 In the next step, you will need to use ``||input:on button [A] pressed||``
 ```blocks
-input.onButtonPressed(Button.A, function () {
-	
-})
+let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
 ```validation.local
 # BlocksExistValidator
@@ -67,9 +65,7 @@ input.onButtonPressed(Button.A, function () {
 💡 This will be the trigger for our servo motor. We will worry about this later!
 ```blocks
 // @highlight
-input.onButtonPressed(Button.A, function () {
-	
-})
+let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
 
 ## {different blocks}
