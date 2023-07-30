@@ -11,7 +11,7 @@ Let's create movement using @boardname@ , Grove and Servo Motors!
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 ![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
-> Continue onto the next when ready to start
+> Click the ``|OK|`` or ``|Next|`` button when ready to continue.
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -42,12 +42,6 @@ input.onButtonPressed(Button.A, function () {
 ## Coding Time 
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
 💡 This will be the trigger for our servo motor. We will worry about this later!
-```diffblocks
-let x = 1
-----------
-let x = 1
-let y = 1
-```
 
 ```blocks
 // @highlight
@@ -55,6 +49,7 @@ input.onButtonPressed(Button.A, function () {
 	
 })
 ```
+
 ## differentblocks
 different
 ```diffblocks
