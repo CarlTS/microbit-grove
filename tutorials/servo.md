@@ -23,9 +23,6 @@ We'll begin by testing our microbit
 
 ```blocks
 basic.showIcon(IconNames.Yes)
-input.onButtonPressed(Button.A, function () {
-	
-})
 ```
 
 ## Collecting Parts @unplugged @fullscreen
@@ -38,15 +35,6 @@ Connect the parts together.
 
 ## Time to Code @unplugged
 In the next step, you will need to use ``||input:on button [A] pressed||``
-```validation.local
-# BlocksExistValidator
-* Enabled: false
-```
-```blocks
-input.onButtonPressed(Button.A, function () {
-	
-})
-```
 
 ## Coding Time 
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
