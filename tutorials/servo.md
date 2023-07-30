@@ -35,12 +35,20 @@ Connect the parts together.
 
 ## Time to Code @unplugged
 In the next step, you will need to use ``||input:on button [A] pressed||``
+```blocks
+input.onButtonPressed(Button.A, function () {
+	
+})
+```
+```validation.local
+# BlocksExistValidator
+* Enabled: false
+```
 
 ## Coding Time 
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
 💡 This will be the trigger for our servo motor. We will worry about this later!
 ```blocks
-basic.showIcon(IconNames.Yes)
 input.onButtonPressed(Button.A, function () {
 	
 })
