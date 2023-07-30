@@ -56,20 +56,65 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 ## differentblocks
-► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``
+► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``   
+💡 This will be tell the servo motor where to move to
 ```blocks
-
 input.onButtonPressed(Button.A, function () {
     // @highlight
     pins.servoWritePin(AnalogPin.P0, 180)
 })
 ```
 
-## Testing Hint
-Words
+## Download to micro:bit
+► Time to test the movement   
+► ``|Download|`` your code to the micro:bit and press the [A] button on the microbit
 
 
+## Testing Single Movement @unplugged
+You should have seen you micro:bit move!  
+💡 If it is not moving, it might already be at position 180 **or** you might need a battery pack
 
+
+## Test different numbers
+► Try changing the value of 180, and test again   
+💡 Don't forget to ``|Download|``  
+```blocks
+Only numbers between 0 and 180 will work.
+You may need a battery pack if it is not moving at all
+```
+
+## More Control
+► Let us get more control with another ``||input:on button [A] pressed||`` on the workspace   
+► You will need to change the [A] pressed to [B] pressed
+```blocks
+input.onButtonPressed(Button.A, function () {
+    // @highlight
+    pins.servoWritePin(AnalogPin.P0, 180)
+})
+input.onButtonPressed(Button.B, function () {
+
+})
+```
+
+## More Control - Second Location
+► Place another ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [B] pressed||``   
+► Set [180] to [90]
+```blocks
+input.onButtonPressed(Button.A, function () {
+    pins.servoWritePin(AnalogPin.P0, 180)
+})
+input.onButtonPressed(Button.B, function () {
+    // @highlight
+    pins.servoWritePin(AnalogPin.P0, 90)
+})
+```
+
+## Download to micro:bit
+► Time to test the movement   
+► ``|Download|`` your code to the micro:bit 
+► Press the [A] button on the microbit and it should go to position 180
+► Pressing [B] should go to position 90
+ 
 ##Coding: Setup the first position
 ------------------
 Place a ``||pins:servo write pin||`` block inside a ``||input:On Button A Pressed||``
