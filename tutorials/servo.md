@@ -49,31 +49,24 @@ input.onButtonPressed(Button.A, function () {
 	
 })
 ```
-```diffblocks
-
-----------
-input.onButtonPressed(Button.A, function () {
-    
-})
-```
 
 ## differentblocks
 ► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``
-```diffblocks
-input.onButtonPressed(Button.A, function () {
-    
-})
-----------
-input.onButtonPressed(Button.A, function () {
-    pins.servoWritePin(AnalogPin.P0, 180)
-})
-```
 ```blocks
 input.onButtonPressed(Button.A, function () {
     pins.servoWritePin(AnalogPin.P0, 180)
 })
 ```
-
+<!-- Diffblocks appears to break validation
+ ```diffblocks
+input.onButtonPressed(Button.A, function () {
+    
+})
+----------
+input.onButtonPressed(Button.A, function () {
+    pins.servoWritePin(AnalogPin.P0, 180)
+})
+```-->
 ## Testing Hint
 Words that are not hidden
 ~hint This content is hidden until the user clicks here.
