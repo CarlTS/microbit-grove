@@ -9,7 +9,7 @@ Let's create movement using @boardname@ , Grove and Servo Motors!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
 **Helpful Hints**
   - :lightbulb: Look out for hints indicated by a light bulb   
-You can click the ``| OK ➔ |`` or ``| ➔ Next |`` button on the right after each step to continue.
+You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right after each step to continue.
 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
@@ -23,6 +23,9 @@ We'll begin by testing our microbit
 
 ```blocks
 basic.showIcon(IconNames.Yes)
+input.onButtonPressed(Button.A, function () {
+	
+})
 ```
 
 ## Collecting Parts @unplugged @fullscreen
@@ -39,7 +42,6 @@ In the next step, you will need to use ``||input:on button [A] pressed||``
 input.onButtonPressed(Button.A, function () {
 	
 })
-
 ```
 
 ## Coding Time 
@@ -61,18 +63,8 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 ## Testing Hint
-Words that are not hidden
-~hint This content is hidden until the user clicks here.
-  - :lightbulb: Bullet 1
-  - :mouse pointer: Bullet 2
-hint~
+Words
 
-```blocks
-// @highlight
-input.onButtonPressed(Button.A, function () {
-	
-})
-```
 
 
 ##Coding: Setup the first position
