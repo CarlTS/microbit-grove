@@ -44,14 +44,15 @@ Lets collect all the parts needed for this tutorial
 *microbit
 *Cable
 *LED Strip
-<!--![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
+<!-- ![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
 -->
 ## Connecting Everything @unplugged
 Connect the parts together.
-<!--![Servo to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
+<!-- ![LED Strip to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
 -->
 ## Time to Code @unplugged
-In the next step, you will need to use ``||input:on button [A] pressed||``
+In the next step, you will need to use ``||neopixel:set [strip] to NeoPixel at Pin [P0] with [24] leds as RGB||``   
+This will set up the LED Strip for use.
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
@@ -61,8 +62,7 @@ let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
 
 ## {Coding Time}
-► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
-💡 This will be the trigger for our servo motor. We will worry about this later!
+► From the ``||neopixel:Neopixel||`` category in your toolbox, find the ``||input:set [strip] to NeoPixel at Pin [P0] with [24] leds as RGB||`` and add it to your workspace.  
 ```blocks
 // @highlight
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
