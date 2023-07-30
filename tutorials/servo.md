@@ -8,7 +8,7 @@ basic.showIcon(IconNames.Yes)
 Let's create movement using @boardname@ , Grove and Servo Motors!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
 **Helpful Hints**
-  - :lightbulb: Look out for hints indicated by a light bulb   
+Look out for hints indicated by a light bulb   
 You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right after each step to continue.
 
 ## Testing the micro:bit @unplugged
@@ -37,7 +37,7 @@ Connect the parts together.
 In the next step, you will need to use ``||input:on button [A] pressed||``
 ```blocks
 input.onButtonPressed(Button.A, function () {
-	
+
 })
 ```
 
@@ -46,7 +46,7 @@ input.onButtonPressed(Button.A, function () {
 💡 This will be the trigger for our servo motor. We will worry about this later!
 ```blocks
 input.onButtonPressed(Button.A, function () {
-	
+
 })
 ```
 
