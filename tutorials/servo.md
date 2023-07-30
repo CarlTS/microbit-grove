@@ -1,5 +1,5 @@
 ### @activities 1
-# Inputs & Outputs with Microbit
+# Servo Motors with Microbit & Grove
 ```template
 basic.forever(function () {
 	
@@ -10,10 +10,8 @@ basic.forever(function () {
 ## Introduction
 ### Introduction step @unplugged
 <!---  @unplugged Deprecated use @showdialog --->
-![](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/combinedlogo.png)
-You will learn how to use certain input sensors and outputs with your micro:bit
-
-To get started we will connect and test your micro:bit
+![](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+Making movement with a servo motor
 
 
 
