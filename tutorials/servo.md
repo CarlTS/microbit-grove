@@ -44,7 +44,11 @@ input.onButtonPressed(Button.A, function () {
 ## Coding Time 
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
 💡 This will be the trigger for our servo motor. We will worry about this later!
-
+```blocks
+input.onButtonPressed(Button.A, function () {
+	
+})
+```
 ```diffblocks
 
 ----------
@@ -64,7 +68,11 @@ input.onButtonPressed(Button.A, function () {
     pins.servoWritePin(AnalogPin.P0, 180)
 })
 ```
-
+```blocks
+input.onButtonPressed(Button.A, function () {
+    pins.servoWritePin(AnalogPin.P0, 180)
+})
+```
 
 ## Testing Hint
 Words that are not hidden
