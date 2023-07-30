@@ -58,7 +58,7 @@ input.onButtonPressed(Button.A, function () {
 ## differentblocks
 ► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``
 ```blocks
-// @highlight
+
 input.onButtonPressed(Button.A, function () {
     // @highlight
     pins.servoWritePin(AnalogPin.P0, 180)
