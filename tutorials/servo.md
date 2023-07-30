@@ -8,9 +8,9 @@ Let's create movement using @boardname@ , Grove and Servo Motors!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
 
 ## Testing the micro:bit @unplugged
-We want to make sure everything is working correctly.
+We want to make sure everything is working correctly before we start.
 ![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
-<font size=2>Continue onto the next when ready to start</font>
+> Continue onto the next when ready to start
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -30,8 +30,16 @@ Lets collect all the parts needed for this tutorial
 Connect the parts together.
 ![Servo to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
 
+## Time to Code @unplugged
+You will need to use the ``||input:on button [A] pressed||`` in the next step
+```blocks
+// @highlight
+input.onButtonPressed(Button.A, function () {
+	
+})
+```
 
-## Coding Time @unplugged @fullscreen
+## Coding Time 
 ► From the ``||input:Input||`` category in your toolbox, find the ``||input:on button [A] pressed||`` and add it to your workspace.  
 💡 This will be the trigger for our servo motor. We will worry about this later!
 
@@ -41,6 +49,9 @@ input.onButtonPressed(Button.A, function () {
 	
 })
 ```
+
+##
+
 
 
 ```validation.global
