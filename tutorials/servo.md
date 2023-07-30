@@ -2,7 +2,13 @@
 
 # Servo Motors with Microbit & Grove
 ```template
-basic.showIcon(IconNames.Yes)
+basic.showLeds(`
+    . . . . .
+    . . . . #
+    . . . # .
+    # . # . .
+    . # . . .
+    `)
 ```
 ## {Introduction @unplugged}
 Let's create movement using @boardname@ , Grove and Servo Motors!
@@ -19,10 +25,16 @@ We want to make sure everything is working correctly before we start.
 We'll begin by testing our microbit   
 ► Plug in your microbit   
 ► In the bottom left of the screen select  ``|Download|``  
-► You should now see a ✓ on your microbit  -  💡 [Need help connecting?](https://www.youtube.com/watch?v=qSjMDG84bMY)
+► You should now see a **✓** on your microbit  -  💡 [Need help connecting?](https://www.youtube.com/watch?v=qSjMDG84bMY)
 
 ```blocks
-basic.showIcon(IconNames.Yes)
+basic.showLeds(`
+    . . . . .
+    . . . . #
+    . . . # .
+    # . # . .
+    . # . . .
+    `)
 ```
 
 ## Collecting Parts @unplugged @fullscreen
@@ -65,8 +77,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Download to micro:bit
-► Time to test the movement   
+## Time to test the movement
 ► ``|Download|`` your code to the micro:bit and press the [A] button on the microbit
 
 
@@ -77,20 +88,22 @@ You should have seen you micro:bit move!
 
 ## Test different numbers
 ► Try changing the value of 180, and test again   
-💡 Don't forget to ``|Download|``  
-```blocks
+💡 Don't forget to ``|Download|`` each time to test  
+   
+      
+         
 Only numbers between 0 and 180 will work.
 You may need a battery pack if it is not moving at all
-```
+
 
 ## More Control
 ► Let us get more control with another ``||input:on button [A] pressed||`` on the workspace   
-► You will need to change the [A] pressed to [B] pressed
+► You will need to change the ``||input:[A]||`` pressed to ``||input:[B]||`` pressed
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    // @highlight
     pins.servoWritePin(AnalogPin.P0, 180)
 })
+// @highlight
 input.onButtonPressed(Button.B, function () {
 
 })
@@ -98,11 +111,14 @@ input.onButtonPressed(Button.B, function () {
 
 ## More Control - Second Location
 ► Place another ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [B] pressed||``   
-► Set [180] to [90]
+► Set ``||input:[180]||`` to ``||input:[90]||``
 ```blocks
+// @highlight
 input.onButtonPressed(Button.A, function () {
+    // @highlight
     pins.servoWritePin(AnalogPin.P0, 180)
 })
+// @highlight
 input.onButtonPressed(Button.B, function () {
     // @highlight
     pins.servoWritePin(AnalogPin.P0, 90)
@@ -111,22 +127,39 @@ input.onButtonPressed(Button.B, function () {
 
 ## Download to micro:bit
 ► Time to test the movement   
-► ``|Download|`` your code to the micro:bit 
-► Press the [A] button on the microbit and it should go to position 180
+► ``|Download|`` your code to the micro:bit   
+► Press the [A] button on the microbit and it should go to position 180   
 ► Pressing [B] should go to position 90
  
-##Coding: Setup the first position
-------------------
-Place a ``||pins:servo write pin||`` block inside a ``||input:On Button A Pressed||``
-Set the number "180" to "0"
+## Congratulations @unplugged
+You have learnt how to control a servo motor that could be added to your own project.   
+   
+Now try the challenges on the following pages   
+► Complete Control   
+► User Feedback   
+► Shake Trigger
+
+## Complete Control
+Try this challenge:   
+► Pressing A goes to 20 degrees   
+► Pressing B goes to 160 degrees   
+► Pressing A and B goes to 90 degrees
+
+## User Feedback
+Try this challenge:   
+► Pressing A moves the servo and shows a left arrow   
+► Pressing B Shows a right arrow and moves the servo   
+
+## Shake trigger
+Try this challenge:   
+► When shaking the microbit (Not the servo motor) it moves the Servo   
+► Pressing A - resets the servo position   
+
 ```blocks
-// @highlight
-input.onButtonPressed(Button.A, function () {
-    pins.servoWritePin(AnalogPin.P0, 20)
+input.onGesture(Gesture.Shake, function () {
+	
 })
 ```
-
-
 
 
 ```validation.global
