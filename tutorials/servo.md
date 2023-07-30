@@ -51,7 +51,6 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.A, function () {
 	
 })
-
 ```
 
 ## differentblocks
