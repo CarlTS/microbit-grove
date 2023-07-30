@@ -60,6 +60,7 @@ input.onButtonPressed(Button.A, function () {
 ```blocks
 // @highlight
 input.onButtonPressed(Button.A, function () {
+    // @highlight
     pins.servoWritePin(AnalogPin.P0, 180)
 })
 ```
