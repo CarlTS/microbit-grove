@@ -38,6 +38,10 @@ Connect the parts together.
 
 ## Time to Code @unplugged
 In the next step, you will need to use ``||input:on button [A] pressed||``
+```validation.local
+# BlocksExistValidator
+* Enabled: false
+```
 ```blocks
 input.onButtonPressed(Button.A, function () {
 	
