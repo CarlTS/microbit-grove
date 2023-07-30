@@ -23,7 +23,7 @@ nospaceafter
 basic.showIcon(IconNames.Yes)
 ```
 
-## Collecting Parts @fullscreen
+## Collecting Parts @unplugged @fullscreen
 
 Lets Connect all the parts, you will need
 ![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
