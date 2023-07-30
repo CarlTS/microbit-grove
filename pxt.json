@@ -1,6 +1,6 @@
 {
     "name": "Microbit-Grove",
-    "version": "0.0.29",
+    "version": "0.1.0",
     "description": "",
     "dependencies": {
         "core": "*",
