@@ -7,14 +7,13 @@ basic.showIcon(IconNames.Yes)
 ## {Introduction @unplugged}
 Let's create movement using @boardname@ , Grove and Servo Motors!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
-
-  - :lightbulb: Look out for hints indicated by a light bulb
-Click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right after each step to continue.
+**Helpful Hints**
+  - :lightbulb: Look out for hints indicated by a light bulb   
+You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right after each step to continue.
 
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 ![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
-
 
 ## {Testing the micro:bit}
 We'll begin by testing our microbit   
@@ -47,20 +46,23 @@ input.onButtonPressed(Button.A, function () {
 💡 This will be the trigger for our servo motor. We will worry about this later!
 
 ```blocks
-// @highlight
 input.onButtonPressed(Button.A, function () {
 	
 })
 ```
 
 ## differentblocks
-different
+► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``
 ```diffblocks
-let x = 1
+input.onButtonPressed(Button.A, function () {
+    
+})
 ----------
-let x = 1
-let y = 1
+input.onButtonPressed(Button.A, function () {
+    pins.servoWritePin(AnalogPin.P0, 180)
+})
 ```
+
 
 ## Testing Hint
 Words that are not hidden
