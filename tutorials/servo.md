@@ -57,16 +57,7 @@ input.onButtonPressed(Button.A, function () {
     pins.servoWritePin(AnalogPin.P0, 180)
 })
 ```
-<!-- Diffblocks appears to break validation
- ```diffblocks
-input.onButtonPressed(Button.A, function () {
-    
-})
-----------
-input.onButtonPressed(Button.A, function () {
-    pins.servoWritePin(AnalogPin.P0, 180)
-})
-```-->
+
 ## Testing Hint
 Words that are not hidden
 ~hint This content is hidden until the user clicks here.
