@@ -51,8 +51,8 @@ Connect the parts together.
 <!-- ![LED Strip to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
 -->
 ## Time to Code @unplugged
-In the next step, you will need to use ``||neopixel:set [strip] to NeoPixel at Pin [P0] with [24] leds as RGB||``   
-This will set up the LED Strip for use.
+We will need to set up the LED Strip to use it correctly.
+In the next step, you will need to use ``||neopixel:set [strip] to NeoPixel at Pin [P0] with [24] leds as RGB||`` 
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
@@ -62,96 +62,89 @@ let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
 
 ## {Coding Time}
-► From the ``||neopixel:Neopixel||`` category in your toolbox, find the ``||input:set [strip] to NeoPixel at Pin [P0] with [24] leds as RGB||`` and add it to your workspace.  
+► Open the ``||neopixel:Neopixel||`` category in your toolbox   
+► Find the ``||input:set (strip) to NeoPixel at Pin [P0] with [24] leds as RGB||`` and place it into the ``||basic:on start||`` block.  
 ```blocks
 // @highlight
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
 
-## {different blocks}
-► Now place a ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [A] pressed||``   
-💡 This will be tell the servo motor where to move to
+## {Setting the colour }
+► Now place a ``||neopixel: (strip) show color [red]||`` after the previous block   
+💡 This will tell the leds to light up red
 ```blocks
 input.onButtonPressed(Button.A, function () {
     // @highlight
-    pins.servoWritePin(AnalogPin.P0, 180)
+    let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
+    // @highlight
+    strip.showColor(neopixel.colors(NeoPixelColors.Red))
 })
 ```
 
 ## Time to test the movement
-► ``|Download|`` your code to the micro:bit and press the [A] button on the microbit
+► ``|Download|`` your code to the micro:bit and watch your LEDs light up!
 
 
-## Testing Single Movement @unplugged
-You should have seen you micro:bit move!  
-💡 If it is not moving, it might already be at position 180 **or** you might need a battery pack
+## Testing Single color @unplugged
+You should have seen your LED strip light up!  
+💡 If it is not lighting up, it might not be plugged in correctly
 
 
 ## Test different numbers
-► Try changing the value of 180, and test again   
+► Try changing the colour instead of red, and test again   
 💡 Don't forget to ``|Download|`` each time to test  
-💡 Only numbers between 0 and 180 will work.
+💡 Think about how the colours are made.
 
 ## {More Control}
-► Let us get more control with another ``||input:on button [A] pressed||`` on the workspace   
-► You will need to change the ``||input:[A]||`` pressed to ``||input:[B]||`` pressed
+► Let us control the colour with a button    
+► Insert a ``||input:on button [A] pressed||`` on the workspace   
 ```blocks
-input.onButtonPressed(Button.A, function () {
-    pins.servoWritePin(AnalogPin.P0, 180)
-})
 // @highlight
-input.onButtonPressed(Button.B, function () {
+input.onButtonPressed(Button.A, function () {
 
 })
 ```
 
-## {More Control - Second Location}
-► Place another ``||pins: Servo Write Pin [P0] to [180]||`` inside the ``||input:on button [B] pressed||``   
-► Set ``||input:[180]||`` to ``||input:[90]||``
+## {More Control - adding light}
+► Place another ``||neopixel: (strip) show color [red]||`` inside the ``||input:on button [B] pressed||``   
+► Set ``||input:[red]||`` to ``||input:[blue]||``
 ```blocks
-// @highlight
 input.onButtonPressed(Button.A, function () {
     // @highlight
-    pins.servoWritePin(AnalogPin.P0, 180)
+    strip.showColor(neopixel.colors(NeoPixelColors.Blue))
 })
-// @highlight
-input.onButtonPressed(Button.B, function () {
-    // @highlight
-    pins.servoWritePin(AnalogPin.P0, 90)
-})
+let strip: neopixel.Strip = null
+strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
+
 ```
 
 ## {Download to micro:bit}
-► Time to test the movement   
-► ``|Download|`` your code to the micro:bit   
-► Press the [A] button on the microbit and it should go to position 180   
-► Pressing [B] should go to position 90
+► Time to test the Light Control   
+► ``|Download|`` your code to the micro:bit    
+► Pressing [A] should set the colour to blue
  
 ## Congratulations @unplugged
-You have learnt how to control a servo motor that could be added to your own project.   
+You have learnt how to control an LED Strip that could be added to your own project.   
    
 Now try the challenges on the following pages   
 ► Complete Control   
-► User Feedback   
-► Shake Trigger
+► Rotate Colour
 
 ## Complete Control Challenge
-► Pressing A goes to 20 degrees   
-► Pressing B goes to 160 degrees   
-► Pressing A and B goes to 90 degrees
+► Pressing A sets colour to green   
+► Pressing B sets colour to purple   
+► Pressing A and B turns leds off
 
-## User Feedback Challenge
-► Pressing A moves the servo and shows a left arrow   
-► Pressing B Shows a right arrow and moves the servo   
-
-## Shake Trigger Challenge
-► When shaking the microbit (Not the servo motor) it moves the Servo   
-► Pressing A - resets the servo position   
-
+## Rotate Colour Challenge
+► Colour changes through all the different hues   
 ```blocks
-input.onGesture(Gesture.Shake, function () {
-	
+let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
+strip.showRainbow(1, 360)
+basic.forever(function () {
+
 })
+strip.rotate(1)
+strip.show()
 ```
 
 ```package
