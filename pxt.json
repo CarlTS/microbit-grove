@@ -12,7 +12,6 @@
         "main.ts",
         "README.md",
         "tutorials/servo.md",
-        "test.md",
         "tutorial-info-cache.json",
         "tutorials/ledStripControl.md",
         "tutorials/io-microbit.md"
@@ -27,5 +26,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
