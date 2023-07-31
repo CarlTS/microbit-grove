@@ -11,7 +11,7 @@ basic.showLeds(`
     `)
 ```
 ## {Introduction @unplugged}
-Let's create LIGHT using @boardname@ , Grove and LED Strips!
+Let's create light using @boardname@ , Grove and LED Strips!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
@@ -39,11 +39,7 @@ basic.showLeds(`
 ```
 
 ## Collecting Parts @unplugged @fullscreen
-Lets collect all the parts needed for this tutorial
-*Grove Shield
-*microbit
-*Cable
-*LED Strip
+Let's collect all the parts needed for this tutorial   
 ![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/LED-neopixel-strip.png)
 
 ## Connecting Everything @unplugged
@@ -63,7 +59,7 @@ let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 
 ## {Coding Time}
 ► Open the ``||neopixel:Neopixel||`` category in your toolbox   
-► Find the ``||input:set (strip) to NeoPixel at Pin [P0] with [24] leds as RGB||`` and place it into the ``||basic:on start||`` block.  
+► Find the ``||neopixel:set (strip) to NeoPixel at Pin [P0] with [24] leds as RGB||`` and place it into the ``||basic:on start||`` block.  
 ```blocks
 // @highlight
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
@@ -106,7 +102,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 ## {More Control - adding light}
-► Place another ``||neopixel: (strip) show color [red]||`` inside the ``||input:on button [B] pressed||``   
+► Place another ``||neopixel: (strip) show color [red]||`` inside the ``||input:on button [A] pressed||``   
 ► Set ``||input:[red]||`` to ``||input:[blue]||``
 ```blocks
 input.onButtonPressed(Button.A, function () {

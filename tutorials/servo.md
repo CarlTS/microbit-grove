@@ -132,27 +132,33 @@ You have learnt how to control a servo motor that could be added to your own pro
    
 Now try the challenges on the following pages   
 ► Complete Control   
-► User Feedback   
+► Show Feedback   
 ► Shake Trigger
 
 ## Complete Control Challenge
+Try coding your microbit so that:   
 ► Pressing A goes to 20 degrees   
 ► Pressing B goes to 160 degrees   
 ► Pressing A and B goes to 90 degrees
 
-## User Feedback Challenge
-► Pressing A moves the servo and shows a left arrow   
-► Pressing B Shows a right arrow and moves the servo   
+## Show Feedback Challenge
+Try coding your microbit so that:   
+► Pressing A moves the servo and shows a left arrow on the screen   
+► Pressing B Shows a right arrow and moves the servo on the screen   
 
 ## Shake Trigger Challenge
 ► When shaking the microbit (Not the servo motor) it moves the Servo   
 ► Pressing A - resets the servo position   
+
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
 	
 })
 ```
+## End of tutorial
+You've reached the end of this tutorial - Click Done to open a New Project.
+
 
 
 ```validation.global
