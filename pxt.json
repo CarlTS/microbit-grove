@@ -14,7 +14,8 @@
         "tutorials/servo.md",
         "test.md",
         "tutorial-info-cache.json",
-        "tutorials/ledStripControl.md"
+        "tutorials/ledStripControl.md",
+        "tutorials/io-microbit.md"
     ],
     "testFiles": [
         "test.ts"
