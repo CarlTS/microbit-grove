@@ -44,12 +44,12 @@ Lets collect all the parts needed for this tutorial
 *microbit
 *Cable
 *LED Strip
-<!-- ![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/ServoMotor.png)
--->
+![GroveShield,Servo,Microbit,Cable](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/LED-neopixel-strip.png)
+
 ## Connecting Everything @unplugged
 Connect the parts together.
-<!-- ![LED Strip to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveServoAssembled.png)
--->
+![LED Strip to Grove in P0/P14, microbit into the Grove Shield](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/LED-neopixel-connect.png)
+
 ## Time to Code @unplugged
 We will need to set up the LED Strip to use it correctly.
 In the next step, you will need to use ``||neopixel:set [strip] to NeoPixel at Pin [P0] with [24] leds as RGB||`` 
