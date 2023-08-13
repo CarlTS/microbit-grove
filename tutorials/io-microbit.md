@@ -91,7 +91,7 @@ input.onButtonPressed(Button.A, function () {
 ### Step 4 - Program Continued
 Coding: Turning the light Off
 ---------------------------------
-Place another ``||input:on Button A Pressed||`` and change it to when 'B' is onButtonPressed
+Place another ``||input:on Button A Pressed||`` and change it to when ``||input:[B]||`` is onButtonPressed
 
 Add another ``||pins:digital write pin||``
 
@@ -383,7 +383,7 @@ When you press A the tone will play, when you press B the melody will play
 ### Step 1 - Collect Parts @unplugged
 Left or Right Gestures
 =============
-In this activity you will learn how to use the external speaker
+In this activity you will learn how to use the gesture sensor.
 
 Collect the parts you will need;
 ![Parts Needed: 1 Gesture, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/GestureSensor.png)
@@ -643,7 +643,7 @@ The 4Digit Display will show how far away something is from the ultrasonic senso
 ----------------------------------------------------------------->
 ## Activity 9 - Servo Motor
 ### Step 1 - Collect Parts @unplugged
-How far away?
+Controlled Movement
 =============
 In this activity you will learn how to make a servo motor move
 

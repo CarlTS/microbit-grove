@@ -14,7 +14,6 @@
         "tutorials/servo.md",
         "tutorial-info-cache.json",
         "tutorials/ledStripControl.md",
-        "tutorials/io-grove.md",
         "tutorials/io-microbit.md"
     ],
     "testFiles": [
