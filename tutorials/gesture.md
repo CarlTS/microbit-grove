@@ -1,6 +1,6 @@
 ### @diffs true
 
-# LED Strip with Microbit & Grove
+# Grove Sesor with Microbit & Grove
 ```template
 basic.showLeds(`
     . . . . .
