@@ -1,0 +1,67 @@
+<!---------------------------------------------------------------  
+-------------------------  NEW ACTIVITY -------------------------
+----------------------------------------------------------------->
+# Activity 6 - Gestures
+
+## Step 1 - Collect Parts @unplugged
+Left or Right Gestures
+=============
+In this activity you will learn how to use the gesture sensor.
+
+Collect the parts you will need;
+![Parts Needed: 1 Gesture, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/GestureSensor.png)
+
+## Step 2 - Connect Wires
+Physical Connection
+-------------------
+1. Plug the microbit into the Shield 
+2. Plug the Gesture Sensor into the I2C Pin
+![Connection Image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/gestureSensor.jpg)
+
+
+## Step 3 - Program
+Coding: Gesture Input
+------------------
+Place a ``||grove:on gesture||`` block and change the gesture to ``||grove:Right||``
+
+```blocks
+grove.onGesture(GroveGesture.Right, function () {
+})
+```
+
+## Step 4 - Program
+Coding: Action from Gesture Input
+------------------
+Place a ``||basic:show string||`` block inside the ``||grove:on gesture||`` and change the word from "Hello" to "R"
+
+```blocks
+grove.onGesture(GroveGesture.Right, function () {
+    basic.showString("R")
+})
+```
+
+## Step 5 - Program
+Coding: Other Gestures
+------------------
+Place a new ``||grove:on gesture||`` block and change the gesture to ``||grove:Left||``
+Insert a ``||basic:show string||`` and change the word to "L"
+
+
+```blocks
+grove.onGesture(GroveGesture.Right, function () {
+    basic.showString("R")
+})
+grove.onGesture(GroveGesture.Left, function () {
+    basic.showString("L")
+})
+```
+This will now sense both directions
+
+<!---Additional Step needed to demonstrate how pause works so buffer does not fill up --->
+
+## Step 6 - Download Program
+Download & Test
+--------------------
+Click ``|Download|`` to transfer your code
+
+When you move your hand Right, the screen will say "R", when you move your hand Left, the screen will say "L"

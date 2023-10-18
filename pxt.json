@@ -14,13 +14,14 @@
         "tutorials/servo.md",
         "tutorial-info-cache.json",
         "tutorials/ledStripControl.md",
-        "tutorials/io-microbit.md"
+        "tutorials/io-microbit.md",
+        "tutorials/gesture.md"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "6.0.17",
+        "target": "6.0.19",
         "targetId": "microbit"
     },
     "supportedTargets": [
