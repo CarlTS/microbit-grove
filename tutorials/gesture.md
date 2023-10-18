@@ -11,8 +11,7 @@ In this activity you will learn how to use the gesture sensor.
 Collect the parts you will need;
 ![Parts Needed: 1 Gesture, 1 microbit, 1 sheild](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/GroveSensors/GestureSensor.png)
 
-## Step 2 - Connect Wires
-Physical Connection
+## Physical Connection
 -------------------
 1. Plug the microbit into the Shield 
 2. Plug the Gesture Sensor into the I2C Pin
@@ -65,3 +64,8 @@ Download & Test
 Click ``|Download|`` to transfer your code
 
 When you move your hand Right, the screen will say "R", when you move your hand Left, the screen will say "L"
+
+
+```package
+Grove=github:seeed-studio/pxt-grove
+```
