@@ -11,7 +11,7 @@ basic.showLeds(`
     `)
 ```
 ## {Introduction @unplugged}
-Let's create light using @boardname@ , Grove and LED Strips!
+Let's create gesture control using @boardname@ , Grove and a Gesture Sensor!
 ![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
 
   - :lightbulb: **Helpful Hints**   
