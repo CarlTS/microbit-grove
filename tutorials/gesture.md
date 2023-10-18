@@ -1,7 +1,46 @@
+### @diffs true
+
+# LED Strip with Microbit & Grove
+```template
+basic.showLeds(`
+    . . . . .
+    . . . . #
+    . . . # .
+    # . # . .
+    . # . . .
+    `)
+```
+## {Introduction @unplugged}
+Let's create light using @boardname@ , Grove and LED Strips!
+![WTS Logo](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/WTSLogo.png)
+
+  - :lightbulb: **Helpful Hints**   
+  Look out for hints indicated by a light bulb   
+You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right after each step to continue.
+
+## Testing the micro:bit @unplugged
+We want to make sure everything is working correctly before we start.
+![Plugging in microbit](https://raw.githubusercontent.com/CarlTS/microbit-grove/master/assets/microbitplugin.gif)   
+
+## {Testing the micro:bit}
+We'll begin by testing our microbit   
+► Plug in your microbit   
+► In the bottom left of the screen select  ``|Download|``  
+► You should now see a **✓** on your microbit  -  💡 [Need help connecting?](https://www.youtube.com/watch?v=qSjMDG84bMY)
+
+```blocks
+basic.showLeds(`
+    . . . . .
+    . . . . #
+    . . . # .
+    # . # . .
+    . # . . .
+    `)
+```
+
 <!---------------------------------------------------------------  
 -------------------------  NEW ACTIVITY -------------------------
 ----------------------------------------------------------------->
-# Activity 6 - Gestures
 
 ## Step 1 - Collect Parts @unplugged
 Left or Right Gestures
@@ -68,4 +107,8 @@ When you move your hand Right, the screen will say "R", when you move your hand 
 
 ```package
 Grove=github:seeed-studio/pxt-grove
+```
+
+```validation.global
+# BlocksExistValidator
 ```
