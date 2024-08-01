@@ -16,7 +16,9 @@
         "tutorials/ledStripControl.md",
         "tutorials/io-microbit.md",
         "tutorials/gesture.md",
-        "tutorials/grove-distance.md"
+        "tutorials/grove-distance.md",
+        "tutorials/grove-counter.md",
+        "tutorials/grove-rotary.md"
     ],
     "testFiles": [
         "test.ts"

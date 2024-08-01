@@ -20,6 +20,8 @@ Let's detect distance using @boardname@ , Grove and an Ultrasonic Distance Senso
   Look out for hints indicated by a light bulb   
 You can click the ``||game: OK ➔ ||`` or ``| ➔ Next |`` button on the right after each step to continue.
 
+
+
 ## Testing the micro:bit @unplugged
 We want to make sure everything is working correctly before we start.
 
@@ -39,15 +41,30 @@ Lets collect all the parts needed for this tutorial
 
 
 ## Connecting Everything @unplugged
--------------------
+
 1. Plug the microbit (4) into the Shield (3) 
 2. Plug the Ultrasonic Sensor (1) into the P0 pin
-3. Plug the 4-digi Display (2) into the P1 pin 
+(we won't use this until later in the tutorial)
+3. Plug the 4-digit Display (2) into the P1 pin 
+
 ![Connection Image](https://raw.githubusercontent.com/CarlTS/grove-sensor-tutorial/master/images/ultrasonicDisplay.jpg)
 
-## Setup the display
-------------------
-Place a ``||grove:Set 4Digit to Display||`` block inside a ``||basic:On Start||``
+## Time to Code! @unplugged
+
+First, we need to program the 4-Digit Display to show an initial value! 
+
+```blocks
+let _4Digit: grove.TM1637 = null
+_4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
+_4Digit.show(0)
+```
+```validation.local
+# BlocksExistValidator
+* Enabled: false
+```
+
+## {step one: set up display}
+Remove ``||basic:show leds||`` and place a ``||grove:Set 4Digit to Display||`` block inside the ``||basic:On Start||``. 
 
 Set the pins to ``||grove:P1||`` and ``||grove:P15||``
 
@@ -59,13 +76,11 @@ let _4Digit = grove.createDisplay(DigitalPin.P1, DigitalPin.P15)
 
 ```
 
-##  Setup Initial Display
+## {Setup Initial Display}
 ------------------
 Now insert a ``||grove:4Digit show number||`` after the ``||grove:Set 4Digit to Display||``
 
-This will show a 0 on the display and show it is connected correctly.
-
-The 0 will appear on the display once you ``|Download|`` the code.
+This will show a 0 on the display. Remember to ``|Download|`` the code! 
 
 ```blocks
 let _4Digit: grove.TM1637 = null
@@ -77,9 +92,7 @@ _4Digit.show(0)
 
 ## Change the Display Preparation
 ------------------
-Place a ``||basic:Forever||`` block and insert a ``||grove:4Digit show number||``
-
-This prepares the display for the ultrasonic distance in the next step
+Place a ``||basic:Forever||`` block and insert a ``||grove:4Digit show number||``. This prepares the display for the Ultrasonic Distance Sensor.
 
 ```blocks
 let _4Digit: grove.TM1637 = null
@@ -112,10 +125,10 @@ basic.forever(function () {
 ## Download & Test Program
 --------------------
 Click ``|Download|`` to transfer your code.
-The 4Digit Display will show how far away something is from the ultrasonic sensor
+The 4Digit Display will show how far away something is from the Ultrasonic Sensor!
 
 ## End of tutorial
-Well done! You've reached the end of this tutorial - Click ``|Done|`` to open a New Project.
+Well done! You've reached the end of this tutorial - Click ``|✓ Done|`` to open a New Project.
 
 ```package
 Grove=github:seeed-studio/pxt-grove
